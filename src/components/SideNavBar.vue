@@ -30,9 +30,7 @@ export default {
   max-width: 320px;
   width: 100%;
   background: transparent;
-  position: fixed;
-  top: 0;
-  right: 0;
+  z-index: 2024;
 
   .nav__list {
     width: 100%;
@@ -42,6 +40,7 @@ export default {
     &-item {
       max-width: 160px;
       width: 100%;
+      height: 100%;
     }
 
     li:nth-child(odd) {

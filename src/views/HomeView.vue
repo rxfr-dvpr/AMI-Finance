@@ -1,5 +1,7 @@
 <template>
   <Header/>
+
+  <img src="@/assets/images/header-bg.png" alt="" class="header-bg">
 </template>
 
 <script>
@@ -15,5 +17,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.header-bg {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+}
 
 </style>

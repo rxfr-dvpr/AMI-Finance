@@ -1,7 +1,9 @@
 <template>
-  <router-view/>
+  <div class="main-app">
+    <router-view/>
 
-  <SideNavBar/>
+    <SideNavBar/>
+  </div>
 </template>
 
 <script>
@@ -17,4 +19,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.main-app {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 </style>
