@@ -1,7 +1,7 @@
 <template>
   <Header/>
 
-  <img src="@/assets/images/header-bg.png" alt="" class="header-bg">
+  <img :src="img" alt="" class="header-bg">
 </template>
 
 <script>
@@ -11,6 +11,11 @@ export default {
   name: 'Home Page',
   components: {
     Header: HomeHeader
+  },
+  data() {
+    return {
+      img: 'https://firebasestorage.googleapis.com/v0/b/ami-finance-45e0f.appspot.com/o/HomePage%2Fheader-bg.png?alt=media&token=c1f79cb8-be72-4be5-8d91-07e441575a95'
+    }
   }
 }
 
@@ -20,7 +25,7 @@ export default {
 
 .header-bg {
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;

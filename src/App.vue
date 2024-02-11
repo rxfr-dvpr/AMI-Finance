@@ -1,9 +1,9 @@
 <template>
   <div class="main-app">
     <router-view/>
-
-    <SideNavBar/>
   </div>
+
+  <SideNavBar/>
 </template>
 
 <script>
@@ -21,9 +21,8 @@ export default {
 <style lang="scss" scoped>
 
 .main-app {
+  max-width: 1560px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
 
 </style>

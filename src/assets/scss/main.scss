@@ -63,6 +63,7 @@ html {
 #app {
     width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 
 .link-icon {
@@ -86,4 +87,9 @@ html {
 
 .yellow-clr {
     color: var(--main-yellow);
+}
+
+body {
+    position: relative;
+    min-height: 100dvh;
 }

@@ -74,6 +74,8 @@ export default {
 
     li:last-of-type {
       max-width: 100% !important;
+      border-right: unset;
+
       .nav__list-link {
         display: flex;
         flex-direction: row;
