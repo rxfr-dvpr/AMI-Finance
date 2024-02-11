@@ -93,3 +93,20 @@ body {
     position: relative;
     min-height: 100dvh;
 }
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.all-title {
+    font-size: calc(27px + 23 * (100vw / 1920));;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--main-yellow);
+}
+
+@media (min-width: 1920px) {
+    .all-title {
+        font-size: 50px !important;
+    }
+}

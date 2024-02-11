@@ -1,17 +1,22 @@
 <template>
+  <BotHeader/>
 
   <img :src="img" alt="" class="bot-bg">
 </template>
 
 <script>
+import BotHeader from '@/components/BotPage/BotHeader.vue'
 
 export default {
-    name: 'Bot Page',
-    data() {
-        return {
-            img: 'https://firebasestorage.googleapis.com/v0/b/ami-finance-45e0f.appspot.com/o/BotPage%2Fmain-bg.png?alt=media&token=0769f7ee-b0a9-459e-a888-65fe17f11daa'
-        }
+  name: 'Bot Page',
+  components: {
+    BotHeader
+  },
+  data() {
+    return {
+      img: 'https://firebasestorage.googleapis.com/v0/b/ami-finance-45e0f.appspot.com/o/BotPage%2Fmain-bg.png?alt=media&token=0769f7ee-b0a9-459e-a888-65fe17f11daa'
     }
+  }
 }
 
 </script>

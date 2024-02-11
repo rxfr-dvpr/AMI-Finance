@@ -12,7 +12,7 @@
           </div>
         </div>
 
-        <h1 class="header-title">
+        <h1 class="header-title all-title">
           <span class="yellow-clr">ami</span>
           finance
         </h1>
@@ -46,9 +46,8 @@ export default {
 <style lang="scss" scoped>
 
 .header {
-  max-width: 1600px;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: relative;
   padding: 70px 0;
 
@@ -98,9 +97,6 @@ export default {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: calc(27px + 43 * (100vw / 1920));;
-    text-transform: uppercase;
-    font-weight: 400;
     font-family: var(--title-font) !important;
 
     .yellow-clr {
